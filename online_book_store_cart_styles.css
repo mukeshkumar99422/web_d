@@ -1,27 +1,52 @@
 body{
-  background-color: rgb(36, 166, 170);
-}
-.header{
-  background-color: rgb(57, 153, 129);
-  width:80%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.main{
-  background-color: rgb(57, 153, 129);
-  width:90%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:10px;
-}
-.header h1{
-  text-align:center;
-  margin-top: -5px;
-  margin-bottom: -5px;
-}
-.logo{
-  height: 40px;
-  width: 40px;
-}
+    background-color: rgb(36, 166, 170);
+  }
+ .header{
+    background-color: rgb(57, 153, 129);
+    width:80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .header h1{
+    text-align:center;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  .logo{
+    height: 40px;
+    width: 40px;
+  }
+  .main{
+    background-color: rgb(57, 153, 129);
+    width:90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+  }
+  table{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  th{
+    border:2px solid black;
+    width:33.34%;
+  }
+  td{
+    border:1px solid black;
+    width:33.4%;
+  }
+  tr{
+    height:100px;
+  }
+  .htr{
+    height:50px;
+  }
+  .table p{
+    margin-top: -2px;
+  }
