@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(36, 170, 159);
+}
+.header p,h1{
+    display: inline-block;
+    text-align:center;
+}
+header logo{
+    display: block;
+}
