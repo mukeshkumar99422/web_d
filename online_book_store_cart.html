@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>cart page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <header class="header">
-      <h1><a href="www.google.com" target="_blank"><img class="logo" src="https://www.svgrepo.com/show/162899/book-shopping-cart.svg" alt="cart_image"></a>Your Cart</h1>
+        <h1><a href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART" target="_blank"><img class="logo" src="https://www.svgrepo.com/show/162899/book-shopping-cart.svg" alt="cart_image"></a>Your Cart</h1>
     </header>
     <main class="main">
-      <table class="table">
-        <tr class="htr">
-          <th class="htc">Item</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td class="htc"><p>Engineering Mathamatics<br>-BS Grewal</p><input type="checkbox" id="book1" value="book1"></td>
-          <td><button type="button" id="add1">+</button><input type="text" id="Quantity1" name="Quantity" placeholder="1"><button type="button" id="del1">-</button></td>
-        </tr>
-        <tr>
-          <td class="htc"><p>Engineering Physics<br>-SP Taneja</p><input type="checkbox" id="book1" value="book1"></td>
-          <td><button type="button" id="add2">+</button><input type="text" id="Quantity2" name="Quantity" placeholder="1"><button type="button" id="del2">-</button></td>
-        </tr>
-        <tr>
-          <td class="htc"><p>Data Structure And Algorithms<br>-JK Chhabra</p><input type="checkbox" id="book1" value="book1"></td>
-          <td><button type="button" id="add3">+</button><input type="text" id="Quantity3" name="Quantity" placeholder="1"><button type="button" id="del3">-</button></td>
-        </tr>
-        <tr>
-          <td class="htc"><p>Digital System Design<br>-Bharati Sinha</p><input type="checkbox" id="book1" value="book1"></td>
-          <td><button type="button" id="add4">+</button><input type="text" id="Quantity4" name="Quantity" placeholder="1"><button type="button" id="del4">-</button></td>
-        </tr>
-      </table>
+        <table class="table">
+            <tr class="thr">
+                <th class="thc">Item</th>
+                <th class="thc">Quantity</th>
+                <th class="thc">Price</th>
+            </tr>
+            <tr>
+                <td class="item">
+                    <p>Engineering Mathamatics<br>-BS Grewal</p><input type="checkbox" id="book" value="book1">
+                </td>
+                <td class="quantity"><button type="button" id="add1">+</button><input type="text" id="Quantity1" name="Quantity" placeholder="1"><button type="button" id="del1">-</button></td>
+                <td class="price">100Rs/-</td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <p>Engineering Physics<br>-SP Taneja</p><input type="checkbox" id="book2" value="book2">
+                </td>
+                <td class="quantity"><button type="button" id="add2">+</button><input type="text" id="Quantity2" name="Quantity" placeholder="1"><button type="button" id="del2">-</button></td>
+                <td class="price">100Rs/-</td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <p>Data Structure And Algorithms<br>-JK Chhabra</p><input type="checkbox" id="book3" value="book3">
+                </td>
+                <td class="quantity"><button type="button" id="add3">+</button><input type="text" id="Quantity3" name="Quantity" placeholder="1"><button type="button" id="del3">-</button></td>
+                <td class="price">100Rs/-</td>
+            </tr>
+            <tr>
+                <td class="item">
+                    <p>Digital System Design<br>-Bharati Sinha</p><input type="checkbox" id="book4" value="book4">
+                </td>
+                <td class="quantity"><button type="button" id="add4">+</button><input type="text" id="Quantity4" name="Quantity" placeholder="1"><button type="button" id="del4">-</button></td>
+                <td class="price">100Rs/-</td>
+            </tr>
+        </table>
     </main>
-  </body>
+    <footer class="footer">
+        <p>Visit our <a href="https://www.flipkart.com/search?q=books&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank">website home page</a> for more books</p>
+</body>
+
 </html>
