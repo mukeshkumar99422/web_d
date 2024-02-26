@@ -50,3 +50,19 @@ body{
   .table p{
     margin-top: -2px;
   }
+  input{
+    border: 2px solid green;
+    width:20px;
+    text-align: center;
+    background-color: lightgreen;
+  }
+  button{
+    background-color: skyblue;
+    border:2px solid blue;
+  }
+  button hover{
+    background-color: blue;
+  }
+  button:hover{
+    background-color: blue;
+  }
