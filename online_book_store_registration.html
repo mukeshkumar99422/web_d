@@ -1,81 +1,122 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
-
     <title>oneline_book_store</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-   <link rel="stylesheet" href="online_book_store_registration_styles.css" />
-
+   <style>
+body{
+background-image: url(https://imgs.search.brave.com/3kM31ElrbhIy6skRDNpKDTw7k_9yg-_O3dLDopsN-5Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDQ2NDA4MDgtMzJj/YTcyYWM3ZjM3P3E9/ODAmdz0xMDAwJmF1/dG89Zm9ybWF0JmZp/dD1jcm9wJml4bGli/PXJiLTQuMC4zJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4T0h4OGJHbGlj/bUZ5ZVh4bGJud3dm/SHd3Zkh4OE1BPT0);
+}
+.header{
+    background-color: tomato;
+    box-shadow: 8px 8px 12px;
+}
+.menu{
+width: 70%;
+max-width: 500px;
+background-color: tomato;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+padding:20px;
+box-shadow: 8px 8px 12px;
+}
+h1,h3,p{
+text-align:center;
+}
+hr{
+height: 2px;
+background-color: brown;
+border-color: brown;
+}
+#student,#teacher{
+width:10%;
+}
+.form p{
+display: inline-block;
+width: 40%;
+text-align: left;
+}
+.form input{
+width: 50%;
+text-align: left;
+}
+.form legend{
+text-align: center;
+}
+.form fieldset{
+border-color: brown;
+}
+.footer p{
+text-align: left;
+}
+a{
+color: blue;
+}
+a:visited{
+color: brown;
+}
+a:active{
+color:blue;
+}
+a:hover{
+color: brown;
+}
+.button {
+display: flex;
+justify-content: center;
+}
+.button button{
+    border:2px solid gray;
+    background-color: tomato;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px;;
+    margin-top: 5px;
+}
+.button button:hover{
+    cursor: pointer;
+    background-color:grey;
+}
+.button button:active{
+    background-color:tomato;
+}
+   </style>
   </head>
-
   <body class="body">
-
-      <h1 class="title">||ONLINE BOOK STORE||</h1>
-
+      <header class="header">
+        <h1>Registration page</h1>
+      </header>
       <div class="menu">
-
         <main>
-
-          <p><b>Register To Access The Book Store</b></p>
-
+          <h3>Register To Access The Book Store</h3>
           <hr>
-
           <section>
-
             <form class="form" action="https://drive.google.com/drive/folders/1OLzrCZJdwbGyH4UitJfiogua7BnoKKGS?usp=drive_link">
-
               <p>You are:</p>
-
                 <label><input id="student" type="radio" name="who" value="student" checked> Student</label>
-
                 <label><input id="teacher" type="radio" name="who" value="teacher"> Teacher</label>
-
               <fieldset>
-
                 <legend><b>REGISTRATION DETAILS</b></legend>
-
                 <p>Name:</p>
-
                 <input type="text" name="name" placeholder="name" required>
-
                 <p>Email address:</p>
-
                 <input type="text" name="email" placeholder="email address" required>
-
                 <p>Mobile No:</p>
-
                 <input type="text" name="number" placeholder="mobile number" required>
-
                 <p>Institute Name:</p>
-
                 <input type="text" name="institute" placeholder="institute name" required>
-
                 <p>Preferred Subjects:</p>
-
                 <input type="text" name="subjects" placeholder="subjects" required>
-
               </fieldset>
-
-              <button type="submit">Submit</button>
-
+               <div class="button">
+                <button buttontype="submit">Submit</button>
+               </div>
             </form>
-
           </section>
-
           <footer class="footer">
-
-            <mark><p>GO TO <a href="www.google.com">CART</a></p></mark>
-
+            <mark><p>GO TO <a href="www.google.com" target="_blank">CART</a></p></mark>
           </footer>
-
         </main>
-
       </div>
-
   </body>
-
 </html>
