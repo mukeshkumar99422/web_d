@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online_book_store_home_page</title> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-image: url(https://t4.ftcdn.net/jpg/01/46/40/35/360_F_146403506_381OxD624hppWMQcIbjLuSr8TCW1q2lj.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .header{
+            background-color: gray;
+            box-shadow: 0px 4px 6px;
+            padding-left:4px;
+        }
+        .header img{
+            height: 40px;
+            width:40px;
+            margin-top: 6px;
+            margin-right: 4px;
+            margin-left:2px;
+            border:2px solid black;
+            border-radius: 6px;
+            background-color:gray;
+        }
+        img:hover{
+            background-color: aqua;
+        }
+        img:active{
+            background-color: gray;
+        }
+        .header h1{
+            display:inline-block;
+        }
+        .wel{
+            width:80%;
+            min-width: 500px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .wel h1{
+            text-align: center;
+            margin-top: 100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight:normal;
+            font-size: x-large;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container section{
+            margin:50px;
+            width:20%;
+            height: 300px;
+            background-color: gray;
+            min-width: 200px;
+            max-width: 250px;
+        }
+        section{
+            text-align: center;
+            font-size:xx-small;
+            border-radius: 10px;
+        }
+        .container h2{
+            margin-top: 6px;
+        }
+        .container p{
+            margin:20px
+        }
+        .container button{
+            margin-top: 60px;
+            border-radius: 12px;
+            border: 2px solid green;
+            background-color: skyblue;
+            box-shadow: 4px 4px 6px;
+            font-size: xx-small;
+            padding: 2px;;
+
+        }
+        .container button:hover{
+            background-color: green;
+            cursor:pointer;
+        }
+        .container button:active{
+            background-color: skyblue;
+        }
+        a:hover{
+            color:blue;
+        }
+    </style>
+   </head>
+<body>
+  <header class="header">
+    <a href="https://cdn-icons-png.flaticon.com/256/29/29302.png" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/29/29302.png" alt="3line"/></a><h1 class="main_heading">Online Book Store</h1>
+  </header>
+  <main>
+    <div class="wel">
+        <h1>Purchasing Book Is Now Easy</h1>
+    </div>
+    <div class="container">
+        <section class="login">
+            <h2>login</h2>
+            <p>login to access your profile and cart</p>
+            <a href="#" target="_blank"><button>login</button></a>
+        </section>
+        <section class="register">
+            <h2>Register</h2>
+            <p>Not having an account <br>Register now</p>
+            <a href="#" target="_blank"><button>register</button></a>
+        </section>
+        <section class="catalog">
+            <h2>Catalog</h2>
+            <p>login to access your profile and cart</p>
+            <a href="#" target="_blank"><button>catalog</button></a>
+        </section>
+        <section class="new-web">
+            <h2>New website</h2>
+            <p>Move to our new website <br>For more items</p>
+            <a href="#" target="_blank"><button>move</button></a>
+        </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>All rights <a href="#" target="_blank">reserved</a></p>
+  </footer>
+</body>
+</html>
