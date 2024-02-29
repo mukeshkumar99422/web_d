@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store Catalog</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: skyblue;
+    }
+    header {
+        background-color:gray;
+        text-align: center;
+        text-shadow: 2px 2px 4px;
+        box-shadow: 0px 6px 10px;
+        padding:5px 5px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .container div {
+        width: 300px;
+        min-width: 200px;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 4px 4px 8px ;
+        background-color: rgba(128, 128, 128, 0.342);
+    }
+    .container img {
+        width:100px;
+        height: auto;
+        border-radius: 5px;
+    }
+    .container p{
+        margin:5px 0px;
+    }
+    .container button{
+        border: 2px solid green;
+        border-radius: 10px;
+        background-color:aqua;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .container button:hover{
+        background-color:green;
+    }
+    .container button:active{
+        background-color: aqua;
+    }
+    .footer{
+        margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Book Store Catalog</h1>
+  </header>  
+  <main class="container">
+    <div class="book1">
+      <img src="https://media.harrypotterfanzone.com/sorcerers-stone-us-childrens-edition-600x0-c-default.jpg" alt="Book 1">
+      <h2>Harry Potter and the Philosopher's Stone</h2>
+      <p>Author: J. K. Rowling</p>
+      <p>Price: 100 Rs</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="book2">
+      <img src="https://media.harrypotterfanzone.com/chamber-of-secrets-us-childrens-edition-600x0-c-default.jpg" alt="Book 2">
+      <h2>Harry Potter and the Chamber of Secrets</h2>
+      <p>Author: J. K. Rowling</p>
+      <p>Price: 100 Rs</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="book3">
+        <img src="https://media.harrypotterfanzone.com/prisoner-of-azkaban-us-childrens-edition-600x0-c-default.jpg" alt="Book 2">
+        <h2>Harry Potter and the Prisoner of Azkaban</h2>
+        <p>Author: J. K. Rowling</p>
+        <p>Price: 100 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="book4">
+        <img src="https://media.harrypotterfanzone.com/goblet-of-fire-us-childrens-edition-318x0-c-default.jpg" alt="Book 2">
+        <h2>Harry Potter and the Goblet of Fire</h2>
+        <p>Author: J. K. Rowling</p>
+        <p>Price: 100 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="book5">
+        <img src="https://media.harrypotterfanzone.com/order-of-the-phoenix-us-childrens-edition-600x0-c-default.jpg" alt="Book 2">
+        <h2>Harry Potter and the Order of the Phoenix</h2>
+        <p>Author: J. K. Rowling</p>
+        <p>Price: 100 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="book6">
+        <img src="https://media.harrypotterfanzone.com/half-blood-prince-us-childrens-edition-600x0-c-default.jpg" alt="Book 2">
+        <h2>Harry Potter and the Half-Blood Prince</h2>
+        <p>Author: J. K. Rowling</p>
+        <p>Price: 100 Rs</p>
+        <button type="button">Add to Cart</button>
+      </div>
+      <div class="book7">
+        <img src="https://media.harrypotterfanzone.com/deathly-hallows-us-childrens-edition-600x0-c-default.jpg" alt="Book 2">
+        <h2>Harry Potter and the Deathly Hallows</h2>
+        <p>Author: J. K. Rowling</p>
+        <p>Price: 100 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+  </main>
+  <footer class="footer">
+    <p>All <a href="#" target="#">rights</a> reserved</p>
+  </footer>
+</body>
+</html>
