@@ -1,82 +1,80 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>login page</title>
   <style>
-body {
-  margin: 20px;
-  font-family:arial;
-  padding: 5px;
-  background-color: gray;
-}
-.header{
-  font-size: 20px;
-  text-shadow: 4px 4px 4px rgb(15, 65, 99);
-  text-align: center;
-  background-color:skyblue;
-  min-width:400px;
-  border-radius:10px;
-  box-shadow:4px 4px 8px;
-}
-.main{
-  width:80%;
-  max-width:600px;
-  min-width:400px;
-  margin-left:auto;
-  margin-right:auto;
-  border:4px solid gray;
-  padding:10px;
-  background-color: skyblue;
-  border-radius: 20px;
-  box-shadow:8px 8px 12px;
-}
-.container{
-  border:1px solid black;
-}
-.container legend{
-  text-align: center;
-}
-.figure{
-  display: flex;
-  justify-content: center;
-}
-.figure img{
-  border-radius: 50%;
-  border: 2px solid gray;
-}
-.container input{
-  display: block;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  width:100%;
-  border:1px solid black
-}
-.chbox{
-  padding:2px;
-}
-.chbox input{
-  display: inline-block;
-  width:5%;
-}
-button{
-  background-color: aqua;
-  border:2px solid gray;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-radius: 4px;
-}
-button:hover{
-  background-color: skyblue;
-}
-button:active{
-  background-color: aqua;
-}
+    body {
+      margin: 20px;
+      font-family:arial;
+      padding: 5px;
+      background-color: gray;
+    }
+    .header{
+      font-size: 20px;
+      text-shadow: 4px 4px 4px rgb(15, 65, 99);
+      text-align: center;
+      background-color:skyblue;
+      min-width:400px;
+      border-radius:10px;
+      box-shadow:4px 4px 8px;
+    }
+    .main{
+      width:80%;
+      max-width:600px;
+      min-width:400px;
+      margin-left:auto;
+      margin-right:auto;
+      border:4px solid gray;
+      padding:10px;
+      background-color: skyblue;
+      border-radius: 20px;
+      box-shadow:8px 8px 12px;
+    }
+    .container{
+      border:1px solid black;
+    }
+    .container legend{
+      text-align: center;
+    }
+    .figure{
+      display: flex;
+      justify-content: center;
+    }
+    .figure img{
+      border-radius: 50%;
+      border: 2px solid gray;
+    }
+    .container input{
+      display: block;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      width:100%;
+      border:1px solid black
+    }
+    .chbox{
+      padding:2px;
+    }
+    .chbox input{
+      display: inline-block;
+      width:5%;
+    }
+    button{
+      background-color: aqua;
+      border:2px solid gray;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      border-radius: 4px;
+    }
+    button:hover{
+      background-color: skyblue;
+    }
+    button:active{
+      background-color: aqua;
+    }
   </style>
 </head>
-
 <body>
   <header class="header">
     <h1>Login Page</h1>
@@ -86,21 +84,17 @@ button:active{
       <figure class="figure">
         <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg" alt="Your image" width="100" height="100">
       </figure>
-
   <fieldset class="container">
     <legend>Enter your details</legend>
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
-
     <label for="pass"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="pass" required>
-    
     <div class="chbox">
       <label>Remember me<input type="checkbox" name="remember" value="checked" checked class="chbox"></label>
     </div>
     <button type="submit">Login</button>
   </fieldset>
-
   <div class="oth_op">
     <button type="button" class="cancelbtn">Cancel</button>
     Forgot <a href="ierghi">password?</a>
@@ -108,7 +102,6 @@ button:active{
     </form>
   </main>
   <footer class="footer">
-    
   </footer>
 </body>
 </html>
