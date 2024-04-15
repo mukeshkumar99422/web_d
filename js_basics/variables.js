@@ -1,6 +1,6 @@
 //declaring constants
 const accountId=144553
-//declaring variables(prefer to use let)
+//declaring variables(prefer to use let(local variable))
 let accountState;
 let accountEmail="hitesh@google.com"   //functional scope     
 var accountPassword="1234"             //block scope
