@@ -19,5 +19,3 @@ let d=Boolean(c);
 
 console.log(c);
 console.log(d);
-
-//""=>false
