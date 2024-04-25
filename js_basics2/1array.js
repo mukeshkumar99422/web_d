@@ -50,3 +50,16 @@ const all_new_hero=[...marvel_hero,...dc_hreo]    //same to previous //spread me
 console.log(all_new_hero);
 
 const real_another_array=all_new_hero.flat(1)     //concatenate all sub array (with depth 1)
+
+//sorting array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];          //modify original array
+fruits.sort();
+console.log(fruits);
+fruits.reverse();
+console.log(fruits);
+
+const months = ["Jan", "Feb", "Mar", "Apr"];                    //not modify original array
+const sorted = months.toSorted();
+console.log(sorted);
+const reversed = sorted.toReversed();
+console.log(reversed);
