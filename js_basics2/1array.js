@@ -27,11 +27,11 @@ console.log(typeof newarr);    //string
 slice & splice
 console.log("A ",myarr);
 
-const myn1=myarr.slice(1,3)    //returns copy of a section exclude end limit  //not manipulate original array
+const myn1=myarr.slice(1,3)    //returns copy of a section exclude end limit  //not manipulate original array(shalow copy)
 console.log(myn1);
 console.log("B ",myarr);
 
-const myn2=myarr.splice(1,3)    //returns copy of a section include end limit //manipulate original array
+const myn2=myarr.splice(1,3)    //returns copy of a section include end limit //manipulate original array(deep copy)
 console.log(myn2);
 console.log("C ",myarr);
 

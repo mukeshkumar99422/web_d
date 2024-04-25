@@ -23,4 +23,4 @@ console.log(arr.split('-'));          //return array
 
 console.log(url.concat(arr));
 
-console.log(url.length);              //length is property not function so no ()
+console.log(url.length);              //length is property not method so no ()

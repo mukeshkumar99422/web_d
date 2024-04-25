@@ -103,5 +103,5 @@ console.log(Object.keys(obj5));              //array of keys
 console.log(Object.values(obj5));            //array of values
 console.log(Object.entries(obj5));           //array of array containing key value pair
 
-//check a property exist in oject or not
+//check a property exist in object or not
 console.log(obj1.hasOwnProperty('a'));       //true
