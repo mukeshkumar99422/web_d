@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            margin: 100px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #b9b9b9;
+        }
+    </style>
+</head>
+<body>
+    <!--(table>tr>th*3)-->
+    <table width="100%";>
+        <colgroup>                       <!--group colums-->
+            <col span="2" style="background-color: aqua;"/>
+        </colgroup>
+        <tr>
+            <th>Country</th>
+            <th>Country conde</th>
+            <th>country email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>In</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Cn</td>
+            <td>china@google.com</td>
+        </tr>
+    </table>
+
+    <!-- top to bottom heading -->
+    <table>
+        <tr>
+            <th colspan="2">Country</th> <!--get space equal to 2 colums-->   
+            <td>India</td>
+            <td>USA</td>
+            <td>China</td>
+        </tr>
+        <tr>
+            <th>Country code</th>
+            <td>In</td>
+            <td>USA</td>
+            <td>Cn</td>
+        </tr>
+        <tr>
+            <th>Country email</th>
+            <td>india@google.com</td>
+            <td>usa@google.com</td>
+            <td>china@google.com</td>
+        </tr>
+    </table>
+
+    <!--managed table-->
+    <table>
+        <thead style="background-color: aqua;">
+            <tr>
+                <th>month</th>
+                <th>savings</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: bisque;">  <!--not inline css therefore internal css get more preference-->
+            <tr>
+                <td>jan</td>
+                <td>$20</td>
+            </tr>
+            <tr style="background-color: bisque;">
+                <td>feb</td>
+                <td>$30</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: aqua;">
+            <tr>
+                <td>2</td>
+                <td>$30</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

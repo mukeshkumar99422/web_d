@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+    <script>
+        function fetch(){
+            var val=document.getElementById("fmemb").value
+            document.getElementById("fmembn").value=val
+        }
+    </script>
+</head>
+<body>
+    <form action="#" class="form" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" placeholder="first name" id="fname" required/>
+        <br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" placeholder="last name" id="lname" required/>
+        <br>
+
+        <label for="email">Email address:</label> <!--auto validatioin of email via email tag-->
+        <input type="email" name="email" id="email" maxlength="50" minlength="20" multiple required/>  <!--multiple email can be entered by comma separated-->
+        <br>
+
+        <label for="bday">Date of birth;</label>
+        <input type="date" name="birth-date" id="bday" max="01-01-2024" />
+        <br>
+
+        <label for="ppic">Profile picture:</label>
+        <input type="file" name="ppic" id="ppic" accept="image/*,.pdf">
+        <br>
+
+        <label for="fcolor">Favourite color:</label>
+        <input type="color" name="fcolor" id="fcolor" value="#414141">
+        <br>
+
+        <label for="options">Select option:</label>
+        <select name="who" id="options" multiple> <!--select multiple with ctrl-->
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select>
+        <br>
+
+        <fieldset>
+            <legend>Select your age:</legend>
+
+            <input type="radio" name="age" id="7">
+            <label for="7">under-7</label>
+            <br>
+            <input type="radio" name="age" id="12">
+            <label for="12">under-12</label>
+            <br>
+            <input type="radio" name="age" id="18">
+            <label for="18">under-18</label>
+            <br>
+            <input type="radio" name="age" id="21">
+            <label for="21">under-21</label>
+            <br>
+            <input type="radio" name="age" id="40">
+            <label for="40">under-40</label>
+            <br>
+            <input type="radio" name="age" id="70">
+            <label for="70">under-70</label>
+            <br>
+            <input type="radio" name="age" id="100">
+            <label for="100">under-100</label>
+        </fieldset>
+        <br>
+
+        <input type="checkbox" id="mstatus" name="mstatus" value="married" checked>  <!--NOTE=>checkbox can checked multiple BUT radio buttons can be selected only one among same names-->
+        <label for="mstatus">Married:</label>
+        <br>
+
+        <label for="income">Family members less than:</label>
+        <input type="range" name="fmemb" id="fmemb" min="2" max="10" step="2" value="0" onchange="fetch()">
+        <input type="text" id="fmembn" value="0">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="password" maxlength="8" minlength="4" required/>
+        <br>
+
+        <input type="reset" value="reset">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

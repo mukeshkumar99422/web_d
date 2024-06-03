@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        body{
+            background-color:greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img.jpg" alt="image not loaded" width="300px"/>   <!--avoid using height to maintain width-height ratio-->
+    <br>
+
+    <picture>
+        <source media="(min-width:4000px)" srcset="./img1.jpg"/>  <!--1st condition-->
+        <source media="(min-width:200px)" srcset="./img2.jpg"/>   <!--2nd condition-->
+
+        <img src="img.jpg" alt="image not found" width="500px"/>  <!--else-->
+    </picture>
+    <br>
+
+    <figure style="border: 2px solid blue;padding: 5px;">       <!--figcaption can be added(searched by browser easily)-->
+        <img src="img.jpg" alt="owl photo" width="100%">
+        <figcaption style="text-align: center;">OWL ON TREE</figcaption>
+    </figure>
+</body>
+</html>
