@@ -1,0 +1,17 @@
+header{
+    position: sticky;
+    top: auto;
+    background-color: rgba(141, 112, 74,0.8);
+    text-align: center;
+    color: white;
+
+}
+body{
+    background-image: url("galaxy.jpg");
+    background-size: cover;   /*completely fill the container=>crope but proportion remain same* and single image will be there*/
+}
+main{
+    background-image: url(land.jpg);
+    background-size:contain;   /*completely fill the container=>not crope and proportion remain same but multiple image can be there*/
+    color: white;
+}

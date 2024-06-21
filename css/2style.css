@@ -1,0 +1,40 @@
+body{
+    background-color: #414141;   /*padding+content*/
+    border: 2px solid red;
+}
+.para{
+    background-color: orange;
+
+    /* border-width: 2px;
+    border-style: dotted;
+    border-color: red; */
+    border: 2px dotted red;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    padding: 10px 30px 10px 30px;  /*top,right,bottom,left*/
+}
+
+.para p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.circle{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    border:2px solid red;
+    border-radius: 50%;
+
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* margin-top: 10px;    NOTE=>margin given here will coinside with bottom margin of upper div*/
+    margin-bottom: 10px;
+}

@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #414141;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+nav{
+    height:60px;
+    background-color: #0f1111;
+
+}
+button{
+    background-color: #f08804;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="7style.css">
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Acount</a></li>
+        <li><a href="#">Cart</a></li>
+    </ul>
+    <ul>
+        <li>display:flex==>element bocome flex container and child elements become flex items</li>
+        <li>flex items try to remain inside flex container(size change) till their content allow<b>(control by flex-wrap)</b></li>
+        <li>flex-derection:colum-reverse==>elements of flex container align vertically bottom to top</li>
+        <li>justify-content:
+            <ol>
+                <li>flex-end/flex-start/flex-center==>all content as it is shift end/start/center to the main axis</li>
+                <li>space-around==>all free space will be distrubuted equally on both side of every element</li>
+                <li>space-evenly==>all free space will be distrubuted equally in between and both sides of elements</li>
+                <li>space-between==>all free space will be distrubuted equally in between the elements</li>
+            </ol>
+        </li>
+        <li>flex-wrap:<b>(NOTE=>space generate bw lines on wraping(control by align-content))</b>
+            <ol>
+                <li>nowrap(default)/wrap/wrap-reverse==>elements move to next line except overflowing the flex container</li>
+                <li>wrap-reverse==>wrap with direction of cross line reversed</li>
+            </ol>
+        </li>
+        <li>align-items:center/start/end/flex-start/flex-end/self-start/self-end==>align items along cross axis</li>
+        <li>align-content:start/center/end/space-around/space-evenly/space-between==>alignment of space around and bw content boxes along cross axis</li>
+        <li>align-self:flex-start/end/center=>alignment of specific flex item along cross axis</li>
+        <li>flex-shrink/grow:<factor>=>size shrinking/growing factor wrt other flex items when changing size of flex container</li>
+    </ul>
+    <div class="container">
+        <div class="boxD">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="boxD">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+</body>
+</html>

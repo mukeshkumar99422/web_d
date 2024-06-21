@@ -1,0 +1,100 @@
+#tr{
+    width: 30%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: lightseagreen;
+    
+
+    color: purple;
+    text-align: center;
+    font-size: 30px;
+    font-weight:900 ;
+
+    border: 10px solid green;
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px black;
+
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: steps(3);
+    transition-delay: 0.5s; */
+    transition: all 2s ease-in 0.5s;
+
+}
+#tr:hover{
+    background-color:green;
+    color: darkred;
+
+    /* transform: translateY(150px);       NOT work along scale
+    transform: skew(45deg); */
+    transform: scale(1,4);
+    #cross{
+        transform: rotateX(90deg);
+        transition: all 2s ease-in 0.5s;
+    }
+    
+}
+#tr:active{
+    color:darkblue;
+}
+
+#loader{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    
+    border-radius: 50%;
+    border: 5px solid rgb(64, 64, 64);
+    border-top: 5px solid wheat;
+
+    animation: loader 3s ease-in-out 0s infinite normal;
+}
+
+#disco{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+    margin-top: 100px;
+
+    border-radius: 50%;
+
+    animation-name: disco_light;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes disco_light {
+    0%{
+        left:100px;
+        background-color:darkblue;
+        border: 5px solid darkred;
+    }
+    50%{
+        left: 500px;
+        background-color: green;
+        border: 5px solid yellow;
+    }
+    100%{
+        left: 1000px;
+        background-color: darkred;
+        border: 5px solid darkblue;
+    }
+}
+
+@keyframes loader {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

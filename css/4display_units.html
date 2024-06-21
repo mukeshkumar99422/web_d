@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="4styleDspl.css">
+</head>
+<body>
+    <ul>
+        <li><b>display:</b></li>
+        <ol>
+            <li>inline(only space required by element(NO width/height, NO margin top/bottom))</li>
+            <li>block(takes full space available in width of line)</li>
+            <li>inline-block(can set margin top/bottom and width height)</li>
+            <li>none(remove element from document flow)</li>
+        </ol>
+    </ul>
+
+    <div id="box1">block</div>
+    <div id="box2">inline</div>
+    <hr>
+
+    <div id="box3">inline</div>
+    <div id="box4">inline-block</div>
+    <hr>
+
+    <div id="box5">display:none(space also removed)</div>
+    <div id="box6">visibility:hidden(space not remove)</div>
+
+    <hr>
+    <hr>
+    <ol>
+        <li>absolute units
+            <ul>
+                <li>px</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>in</li>
+            </ul>
+        </li>
+        <li>relative units
+            <ul>
+                <li>%(wrt size of parent element)</li>
+                <li>em(font-size:2em(2 times parent font size)///width:2em(2 times self font size))</li>
+                <li>rem(wrt font size of root element(body/document))</li>
+            </ul>
+        </li>
+    </ol>
+
+    <div id="box7">
+        <div id="box8">%</div>
+    </div>
+
+    <div id="box9">
+        EM
+        <div id="box10">em</div>
+    </div>
+
+    <div id="box11">rem</div>
+
+</body>
+</html>

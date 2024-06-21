@@ -1,0 +1,51 @@
+
+.navbar{
+    background-color: #414141;
+    color: white;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+li{
+    width: 100px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;   /* main axos is row wise but from roght-->left */
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-content:space-between; */
+
+}
+
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+    
+}
+.boxD{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+
+    align-self: flex-end;
+    flex-shrink:2;
+}

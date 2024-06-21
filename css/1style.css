@@ -1,0 +1,41 @@
+*{
+    font-family: arial;
+}
+h1{
+    color:#414141;
+    background-color: rgba(255,0, 0,0.2);  /*a=>alpha channel =>opacity(0-1)
+    /* background-color:#ff0000;        rgb numbers written in hexadecimal numbers(small) */
+    text-align: center;
+    text-decoration:underline;
+}
+
+#para{
+    color:white;
+    text-align: center;
+    font-weight: bolder;  /*value bw 100-900*/
+    font-family: Arial, Helvetica, sans-serif; /*fall back mechanism=>next will be alternate option if not supported in browser*/
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase; /*lowercase,capitalise,etc*/
+}
+
+.button{
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+#outer{
+    font-size: 25px;
+    text-align: center;
+}
+#inner{
+    font-size: 10px;
+    text-align: center;
+}
