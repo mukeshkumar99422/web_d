@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+
+    <style>
+        .bg-black{
+            background-color: #414141;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title">Dom learning<span style="display: none;">Document Object Model</span></h1>
+        <p class="secTitle">Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <h1>DOM LEARNING</h1>
+        <h2>dom learning</h2>
+    </div>
+    
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+    <script>
+        const title=document.getElementById("title");          //in case of class use classs name
+        title.innerHTML="<span>learning dom</span>";
+        
+        title.style.backgroundColor="green";
+        title.style.borderRadius="10px";
+
+        //accesing text
+        title.innerText                //only visible text(not span(display:none))
+        title.textContent              //all text content(also span(display:none))
+        title.innerHTML                //give all along with tags attributes
+
+        //get elements by class name
+        const listItems=document.getElementsByClassName("li");//.style.backgroundColor="red";==>//give HTML collection
+        console.log(listItems[0]);                            //basic method of array
+        console.log(listItems.length);
+        const listItemsArray=Array.from(listItems);           //convert html collection to array
+        listItemsArray.forEach(function (l){
+            l.style.backgroundColor="yellow";
+        });
+
+
+        //query selector
+        document.querySelector("h1")          //give 1st h1 element
+        document.querySelector("#secTitle")   //selecting via class
+        document.querySelector(".title")      //selecting via id(select element same as css)
+
+        const list=document.querySelector("ul");
+        const firstListItem=list.querySelector("li");
+        firstListItem.style.color="red";
+
+        //quert seletor all
+        const liArray=document.querySelectorAll("li");//.style.backgroundColor="yelow";==>//give node list(not pure array)
+        liArray[0].style.backgroundColor="blue";      //not apply on all at a time
+
+        liArray.forEach(function (li){                //some method like array on node list
+            li.style.color="green";
+        })
+
+
+
+
+    </script>
+</body>
+</html>

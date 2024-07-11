@@ -1,0 +1,27 @@
+<!-- NOTE:-setTimeout(<time>) will wait for 'time' and till then succesive task will be completed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <p>will be changed after 5sec(press stop to stop change)</p>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //SETTIMEOUT==>do function one time after given timeout
+    const changeH1=function(){
+        document.querySelector('h1').innerHTML="best js series on youtube"
+    }
+    const changeText=setTimeout(changeH1, 5000);
+
+    //CLEARTIMEOUT==>stop the function setted after timeout
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeText);
+        console.log('stopped');
+    })
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color: white;">
+    <h1>different readyStates of XMLHttpRequest:-</h1>
+    <p>0=>	UNSENT Client has been created. open() not called yet.</p>
+    <p>1=>	OPENED open() has been called.</p>
+    <p>2=>	HEADERS_RECEIVED send() has been called, and headers and status are available.</p>
+    <p>3=>	LOADING	Downloading; responseText holds partial data.</p>
+    <p>4=>	DONE The operation is complete.</p>
+    <h1>AJAX:-</h1>
+    <p># sends request via XMLHttpRequest object</p>
+    <p># asynchronous</p>
+    <p># can update specific part of web page</p>
+    <div class="data">
+        <b>DATA</b>
+    </div>
+</body>
+<script>
+    const requestURL="https://api.github.com";
+    const xhr=new XMLHttpRequest();                //object creation==>0
+    xhr.onreadystatechange=function(){             //on changing ready state(NOTE:-0 not show)
+        console.log(xhr.readyState);
+
+        if(xhr.readyState==4){
+            const data=this.responseText;          //string of json object
+            const JsonData=JSON.parse(data);
+            console.log(data);
+            document.querySelector('.data').innerHTML=data;
+        }
+    }
+
+    xhr.open('GET',requestURL);                    //request created via open==>1
+    xhr.send();                                    //request sent==>1==>after this become 2,3,4
+
+</script>
+</html>

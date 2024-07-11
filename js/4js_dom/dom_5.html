@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="languages">
+        <li>javascript</li>
+        <li>python</li>
+    </ul>
+</body>
+<script>
+    //creating a function for adding new item
+    function addLang(lang){
+        const li=document.createElement('li');
+        li.innerHTML=`${lang}`;                    //using innerHTML not optimise==>need to traverse full tree all times
+        document.querySelector('.languages').appendChild(li);
+    }
+    addLang("c");
+    addLang("mongodb");
+
+    //in optimised manner
+    function addLangOpti(lang){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(lang));  //optimised method
+        document.querySelector(".languages").appendChild(li);
+    }
+    addLangOpti("java");
+
+    //edit:-replace python with mojo
+    const secLang=document.querySelector("li:nth-child(2)");
+    // secLang.innerHTML="mojo";            //not optimised
+    const newli=document.createElement('li');
+    newli.textContent="mojo";                //appendChild can also be used
+    secLang.replaceWith(newli);              //replacement
+
+    //edit:-replace 1st lang with TypeScript
+    const firstLang=document.querySelector("li:first-child");
+    firstLang.outerHTML="<li>TypeScript</li>";
+
+    //edit:-remove golang
+    const lastLang=document.querySelector("li:last-child");
+    lastLang.remove();
+</script>
+</html>

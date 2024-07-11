@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM||chai aur code</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    //more on html collection
+    const parent=document.querySelector('.parent');
+    console.log(parent);
+    const dayArr=parent.children;                    //html collection
+
+    console.log(dayArr);
+    console.log(dayArr[0].innerHTML);                //1st element of html collection
+    console.log(dayArr.length);
+
+    for(let i=0;i<parent.children.length;i++){
+        console.log(parent.children[i].innerHTML);
+    }
+
+    //important travesing
+    parent.children[1].style.color="orange";
+    console.log(parent.firstElementChild);           //first element of html collection
+    console.log(parent.lastElementChild);            //last element of html collection
+
+    const dayOne=document.querySelector('.day');
+    const parentEle=dayOne.parentElement;            //direct access to parent element
+    console.log(parentEle);
+    const nextSib=dayOne.nextElementSibling;         //direct access to next element(sibling)
+    console.log(nextSib);
+
+    //child nodes==>NODE LIST==>complex tree structure
+    console.log(parent.childNodes);
+    console.log(parent.childNodes.length);           //also count enter(new line) as text
+</script>
+</html>

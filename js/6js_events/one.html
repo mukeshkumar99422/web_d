@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+    <style>
+        .outer{
+            width:200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: orange;
+        }
+        .inner{
+            width:100px;
+            height: 100px;
+
+            background-color: green;
+        }
+        .remove{
+            width:auto;
+            height: auto;
+            padding: 10px;
+            background-color: red;
+            color: blue;
+            font-weight: 900;
+        }
+        #removeBoxes li{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop" onclick="alert('photoshop')"></li>      <!-- 1st -->
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+   </div>
+   
+   <ol id="removeBoxes">
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+    <li><h1 class="remove">click to remove</h1></li>
+   </ol>
+</body>
+<script>
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    //MORE METHODS
+    document.getElementById('japan').onclick=function(){                 //2nd
+        alert('japan  clicked');
+    }
+    document.getElementById('river').addEventListener('click',function(e){     //3rd(event listner)
+        alert('river clicked');
+    },false)
+
+
+    //EVENT PROPAGATION=>direction of propagation of an event on wondow
+    //capturing=>true==>html->body->...target
+    //bubbling=>false(default)==>target...->body->html
+    document.querySelector('.outer').addEventListener('click',function(e){
+        console.log("outer clicked");                                    //1st
+    },true)
+    document.querySelector('.inner').addEventListener('click',function(e){
+        console.log("inner clicked");                                    //2nd
+        // e.stopPropagation()        //event will not propagete to outer elements(bubbling)
+    })
+
+    //PREVENT DEFAULT
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();          //default action will not occur
+        alert('https://google.com');
+    })
+
+    //TARGET==>element at which event occur
+    //remove clicked box
+    document.querySelector('#removeBoxes').addEventListener('click', function(e){
+        if (e.target.tagName === 'h1') {
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+    });
+</script>
+</html>

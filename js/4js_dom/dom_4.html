@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create new element</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //create in memory
+    const div=document.createElement('div');
+    div.className='main';
+    div.id=Math.round(Math.random()*10+1);
+
+    div.setAttribute("title","set_element");
+
+    div.innerHTML="<h1>MUKESH KUMAR</h1>"    //overwrite
+    const addtext=document.createTextNode("chai aur code");
+    div.appendChild(addtext);                //not overwrite
+
+    //attaching in document==>append child method
+    document.body.appendChild(div);          //we cant write body.
+</script>
+</html>
