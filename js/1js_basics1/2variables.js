@@ -1,4 +1,12 @@
 //declaring constants
+// you can NOT:
+    // Reassign a constant value
+    // Reassign a constant array
+    // Reassign a constant object
+
+// But you CAN:
+    // Change the elements of constant array
+    // Change the properties of constant object
 const accountId=144553
 //declaring variables(prefer to use let(local variable))
 let accountState;
