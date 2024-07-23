@@ -29,3 +29,9 @@ function secondNumber(myarr){
 
 const myarr=[1,2,3,4,5];
 secondNumber(myarr);
+
+//function expression
+const functionExp=function(name){
+    console.log(`my name is ${name}`);
+}
+functionExp("mukesh kumar");
