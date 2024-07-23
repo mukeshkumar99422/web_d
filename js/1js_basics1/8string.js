@@ -22,6 +22,8 @@ const arr="m-u-k-e-s-h"
 console.log(arr.split('-'));          //return array
 
 console.log(url.concat(arr));
+//String.concat(url,arr);             //also correct
+//url+arr;                            //also correct
 
 console.log(url.length);              //length is property not method so no ()
 
