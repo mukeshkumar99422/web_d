@@ -13,3 +13,8 @@ console.log(courceInstructor);
 // ==>instead of this
 const{courceInstructor:instructor}=course;
 console.log(instructor);
+
+// const {courcename}=course;
+// console.log(courcename);
+// const {courcename:name}=course;
+// console.log(name);
