@@ -14,7 +14,9 @@ console.log(courceInstructor);
 const{courceInstructor:instructor}=course;
 console.log(instructor);
 
-// const {courcename}=course;
-// console.log(courcename);
-// const {courcename:name}=course;
-// console.log(name);
+//Destructuring of array:-
+const array=[1,2];
+const [first,second]=array;
+console.log(`first:${first}`);                      //1
+console.log(`first:${second}`);                     //2
+console.log("\n");

@@ -104,3 +104,38 @@ console.log(Object.entries(obj5));           //array of array(2d array) containi
 
 //check a property exist in object or not
 console.log(obj1.hasOwnProperty('a'));       //true
+
+// #################  Enhanced Object Literals  ##################
+// Shorthand Property Initialization:Instead of explicitly specifying property names and values, you can use variable names directly as property names.
+const name = "Alice";
+const age = 30;
+const person = { name, age };
+console.log(person);                          // { name: 'Alice', age: 30 }
+
+// Shorthand Method Definition:When defining methods inside an object, you can omit the function keyword.
+const calculator = {
+    add(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {
+        return a - b;
+    }
+};
+console.log(calculator.add(5, 3));             // 8
+
+// Computed Property Names:You can use expressions as property names within square brackets.
+const key = "color";
+const value = "blue";
+const settings = {
+    [key]: value
+};
+console.log(settings);                          //{ color: 'blue' }
+
+// Dynamic Method Names:You can use computed property names for method names as well.
+const methodName = "sayHello";
+const greeter = {
+    [methodName]() {
+        console.log("Hello!");
+    }
+};
+greeter.sayHello();                             //Hello!
