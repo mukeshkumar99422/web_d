@@ -57,3 +57,29 @@ function mid(func1,func2,value){
 };
 
 console.log(mid(addOne,half,5));
+
+//###############################SPREAD/REST OPERATOR#################################
+
+//>'...' as spread operator => unpack the bundle of elements(array,object etc)
+let myArr=[4,5];
+console.log(myArr);                       //[4,5]
+console.log(...myArr);                    //4 5
+
+let myArr2=[1,2,3,...myArr];
+console.log(myArr2);                     //[1,2,3,4,5]
+
+function sumOfAll(a,b){
+    return a+b;
+}
+console.log(sumOfAll(myArr));             //undefined
+console.log(sumOfAll(...myArr));          //9
+
+//>'...' as rest operator => pack all elements in array
+function sumOfAll2(...arr){
+    let sum=0;
+    for(let i of arr){
+        sum+=i;
+    }
+    return sum;
+}
+console.log(sumOfAll2(1,2,3,4,5));          //15
