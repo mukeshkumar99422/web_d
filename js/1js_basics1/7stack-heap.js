@@ -14,5 +14,9 @@ let userOne={
 }
 let userTwo=userOne               //value given via reference
 userTwo.upi=4567
+// userTwo={                      //will not change userOne
+//     email:"mukeshkumar",
+//     upi:123456
+// }
 console.log(userOne.upi);         //4567
 console.log(userTwo.upi);         //4567

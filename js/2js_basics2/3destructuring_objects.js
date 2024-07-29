@@ -14,6 +14,17 @@ console.log(courceInstructor);
 const{courceInstructor:instructor}=course;
 console.log(instructor);
 
+//==>
+const person={
+    a:1,
+    b:{
+        c:2,
+        d:3
+    }
+}
+const {a,b:{d},b:{c}}=person;
+console.log(a,d,c);
+
 //Destructuring of array:-
 const array=[1,2];
 const [first,second]=array;
