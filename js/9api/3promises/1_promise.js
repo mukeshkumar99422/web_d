@@ -1,9 +1,15 @@
-// PROMISE==>object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+//==>>CREATION OF PROMISE
+//PROMISE==>object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 //NOTE:-here 'resolve/reject' && in ajax 'readyState'
+//NOTE:-what promise will return after completion will be passed via resolve(value) to .then
+//NOTE:-what promise will return after failure will be passed via reject(error) to .catch
 
+//==>>CONSUMPTION OF PROMISE
 //.then(<callback function>)==>run when promise resolved
 //.catch(<callback function>)==>run when promise rejected
 //.finally(<callback function>)==>run always(either promise resolved or rejected)
+
+//callback function=>asynchronous task,event handling etc
 
 //async-await(wait till response from promise not recieved)==>used at place of .then
 //NOTE:-'await' keyword is used for getting responses that take time
@@ -11,7 +17,7 @@
 //     const response=await <promise>;   //</promise>====><resolve argumetnt>
 //     console.log(response);
 // }
-//NOTE:-use try-'catch for handling rejection also' && 'reduce chaining of .then'
+//NOTE:-use try-catch for handling rejection also' && 'reduce chaining of .then'
 
 //.then() method create new promise applied on another promise(chained)
 
@@ -41,7 +47,7 @@ const promiseThree=new Promise(function(resolve,reject){
         resolve({usename:'mukesh',email:'mukeshkumar@example.com'});
     },2000);
 });
-promiseThree.then(function(user){              //think resolve as callback function of .then
+promiseThree.then(function(user){              //think "resolve()" as callback function of .then
     console.log(user);
 });
 
