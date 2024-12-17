@@ -1,7 +1,7 @@
 //==>>CREATION OF PROMISE
 //PROMISE==>object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 //NOTE:-here 'resolve/reject' && in ajax 'readyState'
-//NOTE:-what promise will return after completion will be passed via resolve(value) to .then
+//NOTE:-what promise will return after completion will be passed via resolve(value) to .then(()) or other refernce(try-catch)
 //NOTE:-what promise will return after failure will be passed via reject(error) to .catch
 
 //==>>CONSUMPTION OF PROMISE
